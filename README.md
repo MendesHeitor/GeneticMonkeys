@@ -39,5 +39,7 @@ Try to see how the amount of individuals, the mutation rate and the length of th
 
 ### Here is a demonstration
 
+[Screencast from 20-03-2023 20:49:05.webm](https://user-images.githubusercontent.com/93098315/226489724-8ff9eacf-3fac-4312-b784-dccdd6064c80.webm)
+
 ### Next Steps 
 The Genetic Algorithm efficiency relies on a diverse number of variables and functions, such as the fitness function, the selection mechanism, the crossing over mechanism, the mutation rate, the amount of individuals. In the future, I plan to document and display visually how do those variables and functions affect the efficiency of the Algorithm.
