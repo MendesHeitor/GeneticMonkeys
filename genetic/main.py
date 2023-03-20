@@ -10,9 +10,6 @@ def main():
     Pop.initialPop()
 
     while Pop.foundOptimalGenome == False:
-        print(f"\nGeneration {Pop.generation}:\n")
-
-        Pop.printPop()
         Pop.newPop()
 
     print(f'\nThe genome "{targetPhrase}" was found in generation {Pop.generation}')

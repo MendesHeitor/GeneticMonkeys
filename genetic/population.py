@@ -15,7 +15,6 @@ class Population:
         """
         Creates the initial population as a (list) of Individuals
         """
-
         for _ in range(self.popSize):
             idv = Individual(self.genomeLength)
 
@@ -23,6 +22,10 @@ class Population:
             idv.fitnessCalc(self.targetGenome)
             
             self.population.append(idv)
+
+        #outputs the top 5 individuals
+        top5 = self.select_5()
+        self.printPop(top5)
 
     def generateChild(self, parA, parB):
         """
@@ -72,18 +75,28 @@ class Population:
 
         self.population = newPop
 
+        #output the top5 new individuals
+        self.printPop(self.select_5())
+
         
     def selection(self, top_5):
         """
         Selects a parent randomly between the top 5 more adapated Individuals
 
         Parameters:
-            top5 (list): a list contatining the top 5 more adapted Individuals
+            top_5 (list): a list contatining the top 5 more adapted Individuals
         """
         return top_5[random.randrange(5)]
 
-    def printPop(self):
-        print(*(idv.genome for idv in self.population), sep="\n")
+    def printPop(self, population):
+        """
+        Ouputs a sample of the population
+
+        Parameters:
+            population (list): A section of the population
+        """
+        print(f"\nGeneration {self.generation}:\n")
+        print(*(idv.genome for idv in population), sep="\n")
 
 
 
