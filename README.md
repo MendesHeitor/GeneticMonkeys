@@ -40,6 +40,7 @@ Try to see how the amount of individuals, the mutation rate and the length of th
 ### Here is a demonstration
 
 ![GeneticMonkey](https://user-images.githubusercontent.com/93098315/226491735-e0c37fc3-5451-42ee-84b1-176e3c581f93.gif)
+
 <sub>This video was slowed down for better visualization<sub>
     
 ### Next Steps 
